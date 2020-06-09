@@ -1,0 +1,30 @@
+
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<br>
+ <div class="table_container">
+
+        <table class="table mb-5 ">
+            <thead class=" ">
+                <tr>
+                    <th scope="col">#</th>
+                 
+                    <th>Day of the Week</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                </tr>
+            </thead>
+            <tbody>
+          
+               {{#each result}} 
+                     <tr> 
+                        <td>{{ID}}</td>  
+                        <td>{{day_of_the_week}}</td>
+                        <td>{{start_time}}</td>
+                        <td>{{end_time}}</td>
+                    </tr>
+                {{/each}} 
+            </tbody>
+        </table>
+    </div>
