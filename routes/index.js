@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
     console.log(result)
     console.log(fields)
 
-    res.render('index', { title: 'Mr Coffee DB' })
+    res.render('index', { title: 'Mr Coffee DB', result})
   });  
 
 });
